@@ -9,12 +9,12 @@ if(isset($_POST["salvar"])){
     $visual = $_POST["visual"];
     $quant = $_POST["quant"];
     $sobra = $_POST["sobra"];
-    $local = $_POST["local"];
+    $local = $_POST["mesa1"].$_POST["mesa2"].$_POST["mesa3"].$_POST["mesa4"].$_POST["mesa5"].$_POST["insp_cliente"];
 
-    $sql= mysqli_query($mysqli, "INSERT INTO status(OP,SNQC,RELATORIO_DIM,CALIBRACAO,VISUAL,QUANT_APROVADA,SOBRA,LOCAL)
-    VALUES('$op','$snqc','$rd','$cal','$visual','$quant','$sobra','$local')");
+    $sql= mysqli_query($mysqli, "INSERT INTO status(OP,LOCAL,CALIBRACAO,VISUAL,QUANT_TOTAL,SOBRA,RELATORIO_DIM,SNQC)
+    VALUES('$op','$local','$cal','$visual','$quant','$sobra','$rd','$snqc')");
 
-    header("location: /qualidade/index.php");
+    header("location: /qualidade/inicial.php");
 
     
 

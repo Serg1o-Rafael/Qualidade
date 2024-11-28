@@ -11,9 +11,11 @@
    <style>
     .fonte{color:aliceblue;}
     </style>
-        
+<?php include("config/editProcesso/editStatus.php")?> 
+   
 <form action="" method="POST">
-<?php include("config/processo/status.php")?> 
+    
+
 <div class="fonte">
 <select name="op" required>
 <option value="Selecione" selected>Selecione a OP</option>
@@ -24,22 +26,22 @@ while($result =mysqli_fetch_assoc($sql)) {;?>
 <?php echo $result['OP'];}
 ?>
 </option> 
-</select>  <br> <br>
-<h4>SNQC</h4>
+</select>  <br> <br>  
+SNQC <br>
 <input type="radio" name="snqc" value="Finalizado"> Finalizado <br>  
 <input type="radio" name="snqc" value="Em andamento"> Em andamento <br>  
-<input type="radio" name="snqc" value="Não existe"> Não existe <br>
+<input type="radio" name="snqc" value="Não existe"> Não existe <br><br>  
 
-<h4>Relatório Dimensional</h4>
+Relatório Dimensional <br>
 <input type="radio" name="rd" value="Finalizado"> Finalizado <br>  
-<input type="radio" name="rd" value="Em andamento"> Em andamento <br>
+<input type="radio" name="rd" value="Em andamento"> Em andamento <br><br>
 
-<h4>Calibração</h4>
+Calibração <br>
 <input type="radio" name="cal" value="Finalizado"> Finalizado <br>  
-<input type="radio" name="cal" value="Em andamento"> Em andamento <br> 
+<input type="radio" name="cal" value="Em andamento"> Em andamento <br><br>  
 
 
-<h4>Visual</h4>
+Visual <br>
 <input type="radio" name="visual" value="Finalizado"> Finalizado <br>  
 <input type="radio" name="visual" value="Em andamento"> Em andamento <br><br>  
   
@@ -51,13 +53,11 @@ Sobra: <br>
 <input type="number" name="sobra"><br><br>  
 
 Local: <br>
-<input type="radio" name="mesa1" value="Mesa 1"> Mesa 1 <br>  
-<input type="radio" name="mesa2" value="Mesa 2"> Mesa 2 <br>
-<input type="radio" name="mesa3" value="Mesa 3"> Mesa 3 <br> 
-<input type="radio" name="mesa4" value="Mesa 4"> Mesa 4 <br> 
-<input type="radio" name="mesa5" value="Mesa 5"> Mesa 5 <br> 
-<input type="radio" name="insp_cliente" value="Inspeção do Cliente">Inspeção do Cliente<br><br> 
-
+<input type="radio" name="visual" value="Mesa1"> Mesa 1 <br>  
+<input type="radio" name="visual" value="Mesa2"> Mesa 2 <br>
+<input type="radio" name="visual" value="Mesa3"> Mesa 3 <br> 
+<input type="radio" name="visual" value="Mesa4"> Mesa 4 <br> 
+<input type="radio" name="visual" value="Mesa5"> Mesa 5 <br><br>  
 
 
     

@@ -5,16 +5,15 @@ if(isset($_POST["salvar"])){
     include("C:/xampp/htdocs/qualidade/config/conexao.php");
     $op = $_POST["op"];
     $cliente = $_POST["cliente"];
-    $tipo_insp = $_POST["tipo_insp"];
     $pedido = $_POST["pedido"];
-    $quant = $_POST["quant"];
     $data_entrega = $_POST["data_entrega"];
-    $snqc = $_POST["snqc"];
+    $revestimento = $_POST["opcao2"];
+    $insp_q = $_POST["opcao1"];
 
-    $sql= mysqli_query($mysqli, "INSERT INTO info_material(OP,CLIENTE,TIPO_INSP,PEDIDO,QUANT,DATA_ENTREGA,SNQC)
-    VALUES('$op','$cliente','$tipo_insp','$pedido','$quant','$data_entrega','$snqc')");
+    $sql= mysqli_query($mysqli, "INSERT INTO info_material(OP,CLIENTE,PEDIDO,DATA_ENTREGA,INSP_Q,REVESTIMENTO)
+    VALUES('$op','$cliente','$pedido','$data_entrega','$insp_q','$revestimento')");
     
-    header("location: index.php");
+    header("location: inicial.php");
 }
 
 
