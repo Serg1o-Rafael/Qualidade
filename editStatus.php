@@ -11,9 +11,9 @@
    <style>
     .fonte{color:aliceblue;}
     </style>
-<?php include("config/editProcesso/editStatus.php")?> 
+<?php include("config/editStatus/editStatus.php")?> 
    
-<form action="" method="POST">
+<form action="/qualidade/config/editStatus/salvarEditStatus.php" method="POST">
     
 <!-- Seleciona as OP's cadastradas no banco de dados-->
 <div class="fonte">
@@ -60,10 +60,10 @@ Local: <br>
 <input type="radio" name="mesa5" value="Mesa5"<?php echo $local == "Mesa 5" ? "checked" : ""?>> Mesa 5 <br> 
 <input type="radio" name="insp_cliente" value="Inspeção do Cliente" <?php echo $local == "Inspeção do Cliente" ? "checked" : ""?>>Inspeção do Cliente<br><br> 
 
-    
+<input type="hidden" name="op" value="<?php echo $op; ?>"> 
 </div>
 
-<button type="submit" name="salvar">Salvar</button>
+<button type="update" name="update">Salvar</button>
   
 
 

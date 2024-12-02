@@ -12,7 +12,7 @@
     .fonte{color:aliceblue;}
     </style>
 
-<?php include("config/processo/status.php");?>
+<?php include("config/status/status.php");?>
 
 
 <form action="" method="POST">

@@ -5,7 +5,6 @@ if(isset($_POST["salvar"])){
     include("C:/xampp/htdocs/qualidade/config/conexao.php");
 
     $op = $_GET["id"];
-    print_r($op);
     $snqc = $_POST["snqc"];
     $rd = $_POST["rd"];
     $cal = $_POST["cal"];
