@@ -11,20 +11,12 @@
    <style>
     .fonte{color:aliceblue;}
     </style>
-        
+
+<?php include("config/processo/status.php");?>
+
+
 <form action="" method="POST">
-<?php include("config/processo/status.php")?> 
 <div class="fonte">
-<select name="op" required>
-<option value="Selecione" selected>Selecione a OP</option>
-<?php include("config/conexao.php");
-$sql= mysqli_query($mysqli,"SELECT OP from info_material");
-while($result =mysqli_fetch_assoc($sql)) {;?>
-<option value="<?php echo $result['OP'] ?>"> 
-<?php echo $result['OP'];}
-?>
-</option> 
-</select>  <br> <br>
 <h4>SNQC</h4>
 <input type="radio" name="snqc" value="Finalizado"> Finalizado <br>  
 <input type="radio" name="snqc" value="Em andamento"> Em andamento <br>  

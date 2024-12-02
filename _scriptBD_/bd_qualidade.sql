@@ -8,7 +8,8 @@ CREATE TABLE INFO_MATERIAL(
     PEDIDO INT not null,
     DATA_ENTREGA DATE not null,
     INSP_Q bit not null,
-    REVESTIMENTO bit not null);
+    REVESTIMENTO bit not null,
+    SEM REVESTIMENTO bit not null);
     
     
 CREATE TABLE STATUS(

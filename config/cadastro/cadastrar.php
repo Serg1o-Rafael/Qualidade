@@ -13,7 +13,7 @@ if(isset($_POST["salvar"])){
     $sql= mysqli_query($mysqli, "INSERT INTO info_material(OP,CLIENTE,PEDIDO,DATA_ENTREGA,INSP_Q,REVESTIMENTO)
     VALUES('$op','$cliente','$pedido','$data_entrega','$insp_q','$revestimento')");
     
-    header("location: inicial.php");
+    header("location: processo.php?id=$op");
 }
 
 

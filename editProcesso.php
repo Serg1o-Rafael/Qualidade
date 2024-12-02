@@ -15,10 +15,10 @@
    
 <form action="" method="POST">
     
-
+<!-- Seleciona as OP's cadastradas no banco de dados-->
 <div class="fonte">
 <select name="op" required>
-<option value="Selecione" selected>Selecione a OP</option>
+<option value="Selecione" selected><?php echo $op;?></option>
 <?php include("config/conexao.php");
 $sql= mysqli_query($mysqli,"SELECT OP from info_material");
 while($result =mysqli_fetch_assoc($sql)) {;?>
@@ -28,37 +28,37 @@ while($result =mysqli_fetch_assoc($sql)) {;?>
 </option> 
 </select>  <br> <br>  
 SNQC <br>
-<input type="radio" name="snqc" value="Finalizado"> Finalizado <br>  
-<input type="radio" name="snqc" value="Em andamento"> Em andamento <br>  
-<input type="radio" name="snqc" value="Não existe"> Não existe <br><br>  
+<input type="radio" name="snqc" value="Finalizado" <?php echo $snqc == "Finalizado" ? "checked" : ""?> > Finalizado <br>  
+<input type="radio" name="snqc" value="Em andamento"<?php echo $snqc == "Em andamento" ? "checked" : ""?>> Em andamento <br>
+<input type="radio" name="snqc" value="Não existe"<?php echo $snqc == "Não existe" ? "checked" : ""?>> Não existe <br> <br>
 
 Relatório Dimensional <br>
-<input type="radio" name="rd" value="Finalizado"> Finalizado <br>  
-<input type="radio" name="rd" value="Em andamento"> Em andamento <br><br>
+<input type="radio" name="rd" value="Finalizado" <?php echo $rd == "Finalizado" ? "checked" : ""?>> Finalizado <br>  
+<input type="radio" name="rd" value="Em andamento" <?php echo $rd == "Em andamento" ? "checked" : ""?>> Em andamento <br><br>
 
 Calibração <br>
-<input type="radio" name="cal" value="Finalizado"> Finalizado <br>  
-<input type="radio" name="cal" value="Em andamento"> Em andamento <br><br>  
+<input type="radio" name="cal" value="Finalizado"<?php echo $cal == "Finalizado" ? "checked" : ""?>> Finalizado <br>  
+<input type="radio" name="cal" value="Em andamento"<?php echo $cal == "Em andamento" ? "checked" : "" ?>> Em andamento <br><br>  
 
 
 Visual <br>
-<input type="radio" name="visual" value="Finalizado"> Finalizado <br>  
-<input type="radio" name="visual" value="Em andamento"> Em andamento <br><br>  
+<input type="radio" name="visual" value="Finalizado" <?php echo $visual == "Finalizado" ? "checked" : ""?>> Finalizado <br>  
+<input type="radio" name="visual" value="Em andamento" <?php echo $visual == "Em andamento" ? "checked" : ""?>> Em andamento<br><br>  
   
 
 Quantidade Total: <br>
-<input type="number" name="quant"><br><br>  
+<input type="number" name="quant" value="<?php echo $quant;?>"><br><br>  
 
 Sobra: <br>
-<input type="number" name="sobra"><br><br>  
+<input type="number" name="sobra" value="<?php echo $sobra;?>"><br><br>  
 
 Local: <br>
-<input type="radio" name="visual" value="Mesa1"> Mesa 1 <br>  
-<input type="radio" name="visual" value="Mesa2"> Mesa 2 <br>
-<input type="radio" name="visual" value="Mesa3"> Mesa 3 <br> 
-<input type="radio" name="visual" value="Mesa4"> Mesa 4 <br> 
-<input type="radio" name="visual" value="Mesa5"> Mesa 5 <br><br>  
-
+<input type="radio" name="mesa1" value="Mesa1"<?php echo $local == "Mesa 1" ? "checked" : ""?>> Mesa 1 <br>  
+<input type="radio" name="mesa2" value="Mesa2"<?php echo $local == "Mesa 2" ? "checked" : ""?>> Mesa 2 <br>
+<input type="radio" name="mesa3" value="Mesa3"<?php echo $local == "Mesa 3" ? "checked" : ""?>> Mesa 3 <br> 
+<input type="radio" name="mesa4" value="Mesa4"<?php echo $local == "Mesa 4" ? "checked" : ""?>> Mesa 4 <br> 
+<input type="radio" name="mesa5" value="Mesa5"<?php echo $local == "Mesa 5" ? "checked" : ""?>> Mesa 5 <br> 
+<input type="radio" name="insp_cliente" value="Inspeção do Cliente" <?php echo $local == "Inspeção do Cliente" ? "checked" : ""?>>Inspeção do Cliente<br><br> 
 
     
 </div>
