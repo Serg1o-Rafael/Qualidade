@@ -33,10 +33,10 @@
                 <tr>
                 <th scope="col">OP </th>
                 <th scope="col">LOCAL</th>
-                <th scope="col">CALIBRAÇÃO</th>
-                <th scope="col">VISUAL</th>
                 <th scope="col">QUANT_TOTAL</th>
                 <th scope="col">SOBRA</th>
+                <th scope="col">CALIBRAÇÃO</th>
+                <th scope="col">VISUAL</th>
                 <th scope="col">RELATORIO_DIM</th>
                 <th scope="col">SNQC</th>
                 <th scope="col">...</th>
@@ -51,10 +51,10 @@
                              "<td>".$id = $status["ID_MATERIAL"]."</td>";
                         echo "<td>".$status["OP"]."</td>";
                         echo "<td>".$status["LOCAL"]."</td>";
-                        echo "<td>".$status["CALIBRACAO"]."</td>";
-                        echo "<td>".$status["VISUAL"]."</td>";
                         echo "<td>".$status["QUANT_TOTAL"]."</td>";
                         echo "<td>".$status["SOBRA"]."</td>";
+                        echo "<td>".$status["CALIBRACAO"]."</td>";
+                        echo "<td>".$status["VISUAL"]."</td>";
                         echo "<td>".$status["RELATORIO_DIM"]."</td>";
                         echo "<td>".$status["SNQC"]."</td>";
                         
