@@ -6,14 +6,17 @@ if(isset($_POST["salvar"])){
     $op = $_POST["op"];
     $cliente = $_POST["cliente"];
     $pedido = $_POST["pedido"];
-    $data_entrega = $_POST["data_entrega"];
     $revestimento = $_POST["opcao2"];
     $insp_q = $_POST["opcao1"];
+    $data_entrada = $_POST["data_entrada"];
+    $data_entrega = $_POST["data_entrega"];
 
-    $sql= mysqli_query($mysqli, "INSERT INTO info_material(OP,CLIENTE,PEDIDO,DATA_ENTREGA,INSP_Q,REVESTIMENTO)
-    VALUES('$op','$cliente','$pedido','$data_entrega','$insp_q','$revestimento')");
-    
-    header("location: status.php?id=$op");
+
+
+    $sql= mysqli_query($mysqli, "INSERT INTO info_material(OP,CLIENTE,PEDIDO,INSP_Q,REVESTIMENTO,DATA_ENTRADA,DATA_ENTREGA)
+    VALUES('$op','$cliente','$pedido','$insp_q','$revestimento','$data_entrada','$data_entrega')");
+
+    header("location: statusAtalho.php?id=$op");
 }
 
 

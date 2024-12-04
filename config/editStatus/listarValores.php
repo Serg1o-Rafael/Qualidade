@@ -2,9 +2,9 @@
 if(!empty($_GET["id"])){
 
     include("C:/xampp/htdocs/qualidade/config/conexao.php");
-    $op= $_GET["id"];
+    $id= $_GET["id"];
    
-     $sql = "SELECT * FROM status where OP = '$op'";
+     $sql = "SELECT * FROM status where ID_MATERIAL = '$id'";
      $result = mysqli_query($mysqli, $sql);
   
     if($result->num_rows >0) {
@@ -18,8 +18,9 @@ if(!empty($_GET["id"])){
             $sobra = $dados["SOBRA"];
             $local = $dados["LOCAL"];
           
+          
         }
-        print_r($op);
+       
     }
     else{
         header('Location: /qualidade/inicial.php');
