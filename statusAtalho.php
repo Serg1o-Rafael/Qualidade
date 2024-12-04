@@ -56,7 +56,7 @@ Local: <br>
 <input type="checkbox" name="local" id="imesa5" value="Mesa 5"> Mesa 5 <br> 
 <input type="checkbox" name="local" id="i_insp_cliente" value="Inspeção do Cliente">Inspeção do Cliente<br><br> 
 
-<input type="hidden" name="op" value="<?php echo $op; ?>">
+<input type="hidden" name="op" value="<?php $op=$_GET["id"]; echo $op; ?>"> 
     
 </div>
 

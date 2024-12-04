@@ -16,7 +16,7 @@ if(isset($_POST["salvar"])){
     
    $sqlId= mysqli_query($mysqli, "SELECT * FROM info_material where OP = '$op'");
    $result=mysqli_fetch_assoc($sqlId);
-   $id = $result["ID"];
+    $id=$result['ID'];
 
    
     
