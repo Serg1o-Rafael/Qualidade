@@ -15,7 +15,7 @@
   
     <a href="cadastro.php"><button type="btn" >Cadastrar Material</button></a>
 
-    <a href="inicial.php"><button type="btn">Monitoramento</button></a> <br><br>
+    <a href="monitoramento.php"><button type="btn">Monitoramento</button></a> <br><br>
 
 </div>
 
