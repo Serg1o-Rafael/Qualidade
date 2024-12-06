@@ -20,13 +20,32 @@
     
 </div>
 
-    <?php include("config/inicial/tabela.php")?>
+    <?php include("config/monitoramento/tabela.php")?>
     <style>
         h1{text-align: center; color: white;}
+        .box-search{display: flex; justify-content: center; gap: 0.1%;}
+        .logo{display: flex; justify-content: right;}
         
         </style>
-    <h1> Monitoramento (Inspeção Final) </h1>
-   
+
+    <div class="titulo">
+    <h1> Monitoramento (Inspeção Final) </h1> 
+    </div>
+  
+    <div class="logo">
+    <img src="img/logo_forjafix.png"> <br>
+    </div>
+    <div class="box-search">
+        <input type="search" class="form-control w-25" placeholder="Pesquisar" id="pesquisar" >
+        <button onclick="searchData()" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+</svg>
+        </button>
+        </div> <br>
+
+
+
     <div class="m-3">
     <table class="table text-white table-bg">
             <thead>
@@ -82,4 +101,17 @@
 </table>
 </div>
 </body>
+<script>
+    var search = document.getElementById('pesquisar');
+
+    search.addEventListener("keydown", function(event){
+        if (event.key === "Enter") {
+            searchData();
+        }
+    });
+    function searchData()
+    {
+        window.location = 'monitoramento.php?search='+search.value;
+    }
+</script>
 </html>

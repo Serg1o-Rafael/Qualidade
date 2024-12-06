@@ -25,7 +25,7 @@ if(isset($_POST["salvar"])){
     VALUES('$id','$op','$local','$cal','$visual','$quant','$sobra','$rd','$snqc')");
 
 
-    header("location: /qualidade/inicial.php");
+    header("location: /qualidade/monitoramento.php");
 
     
 
