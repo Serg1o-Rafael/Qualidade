@@ -23,7 +23,7 @@ if(!empty($_GET["id"])){
        
     }
     else{
-        header('Location: /qualidade/inicial.php');
+        header('Location: /qualidade/monitoramento.php');
     }
    
 

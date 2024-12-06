@@ -18,6 +18,6 @@ $sqlUpdate="UPDATE status SET OP='$op', LOCAL='$local', CALIBRACAO='$cal', VISUA
 $result= mysqli_query($mysqli, $sqlUpdate);
 
 
-header("Location: /qualidade/inicial.php");
+header("Location: /qualidade/monitoramento.php");
 }
 //header("Location: /qualidade/inicial.php"); ?>

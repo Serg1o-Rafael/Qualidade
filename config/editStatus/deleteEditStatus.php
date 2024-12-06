@@ -12,7 +12,7 @@ if(!empty($_GET["id"])){
         $sqlDelete="DELETE FROM status where OP='$op'";
         $resultDelete = mysqli_query($mysqli, $sqlDelete);
 
-        header('Location: /qualidade/inicial.php');
+        header('Location: /qualidade/monitoramento.php');
     }
     
     
