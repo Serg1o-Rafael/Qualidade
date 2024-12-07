@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/qualidade/css/style.css">
 
     <title>Inserir Processo</title>
 </head>
@@ -12,12 +12,22 @@
     .fonte{color:aliceblue;}
     </style>
 
-<?php include("config/status/status.php");?>
+<?php include("config/cad_monitoramento_inspf/cadastrar.php");?>
 
 
 <form action="" method="POST">
 
 <div class="fonte">
+<select name="op" required>
+<option value="Selecione" selected>Selecione a OP</option>
+<?php include("C:/xampp/htdocs/qualidade/conexao.php");
+$sql= mysqli_query($mysqli,"SELECT OP from materiais");
+while($result =mysqli_fetch_assoc($sql)) {;?>
+<option value="<?php echo $result['OP'] ?>"> 
+<?php echo $result['OP'];}
+?>
+</option> 
+</select>  <br> <br>  
 
 <h4>SNQC</h4>
 <input type="checkbox" name="snqc" id="isnqc1" value="Finalizado"> Finalizado <br>  
@@ -42,9 +52,7 @@ Quantidade Total: <br>
 <input type="number" name="quant"><br><br>  
 
 Sobra: <br>
-<input type="number" name="sobra"><br><br>  
-
-
+<input type="number" name="sobra"></input><br><br>  
 
 
 Local: <br>
@@ -56,7 +64,7 @@ Local: <br>
 <input type="checkbox" name="local" id="imesa5" value="Mesa 5"> Mesa 5 <br> 
 <input type="checkbox" name="local" id="i_insp_cliente" value="Inspeção do Cliente">Inspeção do Cliente<br><br> 
 
-<input type="hidden" name="op" value="<?php $op=$_GET["id"]; echo $op; ?>"> 
+
     
 </div>
 

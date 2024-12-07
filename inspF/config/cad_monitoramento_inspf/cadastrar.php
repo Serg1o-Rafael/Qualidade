@@ -1,9 +1,10 @@
 <?php
 
+// Faz um INSERT dos dados obtidos do formulário cad_monitoramento no banco de dados...
 
 if(isset($_POST["salvar"])){
 
-    include("C:/xampp/htdocs/qualidade/config/conexao.php");
+    include("C:/xampp/htdocs/qualidade/conexao.php");
 
     $op = $_POST["op"];
     $snqc = $_POST["snqc"];
@@ -14,18 +15,18 @@ if(isset($_POST["salvar"])){
     $sobra = $_POST["sobra"];
     $local = $_POST["local"];
     
-   $sqlId= mysqli_query($mysqli, "SELECT * FROM info_material where OP = '$op'");
+   $sqlId= mysqli_query($mysqli, "SELECT * FROM materiais where OP = '$op'");
    $result=mysqli_fetch_assoc($sqlId);
     $id=$result['ID'];
 
    
     
 
-    $sql= mysqli_query($mysqli, "INSERT INTO status(ID_MATERIAL,OP,LOCAL,CALIBRACAO,VISUAL,QUANT_TOTAL,SOBRA,RELATORIO_DIM,SNQC)
+    $sql= mysqli_query($mysqli, "INSERT INTO monitoramento(ID_MATERIAL,OP,LOCAL,CALIBRACAO,VISUAL,QUANT_TOTAL,SOBRA,RELATORIO_DIM,SNQC)
     VALUES('$id','$op','$local','$cal','$visual','$quant','$sobra','$rd','$snqc')");
 
 
-    header("location: /qualidade/monitoramento.php");
+    header("location: /qualidade/inspF/monitoramento.php");
 
     
 

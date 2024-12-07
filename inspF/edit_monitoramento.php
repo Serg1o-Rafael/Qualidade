@@ -11,9 +11,9 @@
    <style>
     .fonte{color:aliceblue;}
     </style>
-<?php include("config/editStatus/listarValores.php")?> 
+<?php include("config/edit_monitoramento_inspf/dados_monitoramento.php")?> 
    
-<form action="/qualidade/config/editStatus/salvarEditStatus.php" method="POST">
+<form action="config/edit_monitoramento_inspf/salvar_monitoramento.php" method="POST">
     
 <!-- Seleciona as OP's cadastradas no banco de dados-->
 <div class="fonte">

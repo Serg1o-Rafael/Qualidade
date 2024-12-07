@@ -1,10 +1,13 @@
 <?php
+
+// Pesquisa os valores salvos no banco de dados de cada campo relacionados ao ID_MATERIAL da tabela monitoramento e guarda-os numa váriavel...
+
 if(!empty($_GET["id"])){
 
-    include("C:/xampp/htdocs/qualidade/config/conexao.php");
+    include("C:/xampp/htdocs/qualidade/conexao.php");
     $id= $_GET["id"];
    
-     $sql = "SELECT * FROM status where ID_MATERIAL = '$id'";
+     $sql = "SELECT * FROM monitoramento where ID_MATERIAL = '$id'";
      $result = mysqli_query($mysqli, $sql);
   
     if($result->num_rows >0) {
@@ -23,7 +26,7 @@ if(!empty($_GET["id"])){
        
     }
     else{
-        header('Location: /qualidade/monitoramento.php');
+        header('Location: /qualidade/inspF/monitoramento.php');
     }
    
 
