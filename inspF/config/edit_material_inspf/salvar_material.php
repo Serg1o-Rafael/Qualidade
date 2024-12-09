@@ -10,7 +10,7 @@ $id= $_POST["id"];
 $op= $_POST["op"];
 $cliente = $_POST["cliente"];
 $pedido = $_POST["pedido"];
-$revestimento = $_POST["tratamento2"];
+$revestimento = $_POST["revestimento"];
 $data_entrada = $_POST["data_entrada"];
 $data_entrega = $_POST["data_entrega"];
 
