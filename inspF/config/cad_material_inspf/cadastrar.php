@@ -8,7 +8,7 @@ if(isset($_POST["salvar"])){
     $op = $_POST["op"];
     $cliente = $_POST["cliente"];
     $pedido = $_POST["pedido"];
-    $revestimento = $_POST["opcao2"];
+    $revestimento = $_POST["revestimento"];
     $insp_q = $_POST["opcao1"];
     $data_entrada = $_POST["data_entrada"];
     $data_entrega = $_POST["data_entrega"];

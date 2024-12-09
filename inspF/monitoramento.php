@@ -3,42 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Qualidade</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="css/logo_forjafix.css">
+    <link rel="stylesheet" type="text/css" href="css/btns.css">
+ <title>Qualidade</title>
 </head>
+
 <body>
-<div class="botoes">
+<h1>Monitoramento(Inspeção Final)</h1>
+    
 
 
+
+    <style>
+        .box-search{
+        display: flex;
+        justify-content: center;
+        gap: 0.1%;
+    }
+    </style>
+
+    
+
+
+    <?php include("config/monitoramento_inspf/tabela.php")?>
+   
     <a href="cad_material.php"><button type="btn" >Cadastrar Material</button></a>
     <a href="materiais.php"><button type="btn">Materiais</button></a> 
     <a href="cad_monitoramento.php"><button type="btn" >Inserir</button></a>
+    <a href="retrabalho.php"><button type="btn" >Retrabalho</button></a>
 
-  
-    
-</div>
 
-    <?php include("config/monitoramento_inspf/tabela.php")?>
-    <style>
-        h1{text-align: center; color: white;}
-        .box-search{display: flex; justify-content: center; gap: 0.1%;}
-        .logo{display: flex; justify-content: right; gap: 5.0% }
-        
-        </style>
-
-    <div class="titulo">
-    <h1> Monitoramento (Inspeção Final) </h1> 
-    </div>
-  
     <div class="logo">
     <img src="img/logo_forjafix.png"> <br>
     </div>
+
     <div class="box-search">
         <input type="search" class="form-control w-25" placeholder="Pesquisar" id="pesquisar" >
         <button onclick="searchData()" class="btn btn-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
 </svg>
         </button>

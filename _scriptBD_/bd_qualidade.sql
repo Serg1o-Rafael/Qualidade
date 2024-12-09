@@ -7,7 +7,7 @@ CREATE TABLE MATERIAIS(
     OP VARCHAR (15) not null,
     CLIENTE INT not null,
     PEDIDO INT not null,
-    REVESTIMENTO bit null,
+    REVESTIMENTO VARCHAR(20) null,
     INSP_Q bit null,
     DATA_ENTRADA varchar(10) not null,
     DATA_ENTREGA varchar(10) not null);
@@ -28,6 +28,23 @@ CREATE TABLE MONITORAMENTO(
    
    FOREIGN KEY (ID_MATERIAL) REFERENCES MATERIAIS(ID));
    
+
+    CREATE TABLE RETRABALHO(
+        ID int not null PRIMARY KEY AUTO_INCREMENT,
+        ID_MATERIAL int not null,
+        OP VARCHAR (15) not null,
+        QUANT_TOTAL INT not null,
+        DATA varchar(10) not null,
+        DATA_SAIDA VARCHAr(10) null,
+        ESPECIFICAÇÃO TEXT not null,
+
+    FOREIGN KEY(ID_MATERIAL) REFERENCES MATERIAIS(ID));
+
+
+
+
+
+    )
    
   
     
