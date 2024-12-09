@@ -3,44 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/qualidade/css/body.css">
+    <link rel="stylesheet" type="text/css" href="/qualidade/inspF/css/body.css">
+    <link rel="stylesheet" type="text/css" href="/qualidade/inspF/css/btn_salvar.css">
+    <link rel="stylesheet" type="text/css" href="/qualidade/inspF/css/cad_material.css">
+
 
     <title>Document</title>
 </head>
 <body>
-    <style>
+   
+<?php include("config/edit_material_inspf/dados_material.php");?>
 
-        .titulo-cadastrandoMaterial{color:aliceblue;}
-        </style>
-    <div class="titulo-cadastrandoMaterial">
-    <h2>Cadastrando Material:</h2><br><br>
-    </div>
-    <?php include("config/edit_material_inspf/dados_material.php");?>
-
-    <form action="config/edit_material_inspf/salvar_material.php" method="POST">
-
-<style>
-    .fonte{color:aliceblue; text-align: justify; }
-
-    </style>
-
-<div class="fonte">
-   <h3><input type="text" name="op" maxlength="15" require value="<?php echo $op; ?>">  OP <br><br></h3>
-   <h3><input type="text" name="cliente" required value="<?php echo $cliente; ?>"> Cliente <br>    <br></h3>
-   <h3><input type="number" name="pedido" required value="<?php echo $pedido; ?>"> Pedido <br>    <br></h3> 
-   <h3><input type="checkbox" id="iopcao2" name="tratamento2" value="0"<?php echo $revestimento == "1" ? "checked" : "";?>>Com Revestimento <br> </h3>   
-   <h3><input type="checkbox" id="iopcao3" name="sem_revestimento" value="Sem Revestimento">Sem Revestimento<br><br></h3> 
-   <input type="text" id="data" name="data_entrada" maxlength="10" onkeyup="mascaraData(this)" placeholder="Dia/Mês/Ano" value="<?php echo $data_entrada; ?>">Data de Entrada<br><br>
-   <input type="text" id="data" name="data_entrega" maxlength="10" onkeyup="mascaraData(this)" placeholder="Dia/Mês/Ano" value="<?php echo $data_entrega; ?>">Data de Entrega<br><br>
+<form action="config/edit_material_inspf/salvar_material.php" method="POST">
 
 
-   <input type="hidden" name="id" value="<?php echo $id;?>">
-   <script> function mascaraData(input) { var valor = input.value; if (valor.length == 2 || valor.length == 5) { input.value += '/'; } } </script>
+    <h1>Cadastrando Material:</h1><br>
+  
+    <?php include("config/cad_material_inspf/cadastrar.php");?>
+    <form action="" method="POST">
 
 
+    <h3>
+    <div class="tudo">    
+        <div class="campos">
+    <h4>Obrigatório:</h4> 
+    <input type="text"   name="op" value="<?php echo $op; ?>" maxlength="15" require><br>
+    <input type="text"   name="cliente" value="<?php echo $cliente; ?> " required>        <br>   
+    <input type="number" name="pedido" value="<?php echo $pedido; ?> " required>  <br> <br>  
+        </div>
+    
+        <div class="campos2">
+        <h4>Característica</h4>
+   <input    type="checkbox" id="iopcao1" name="revestimento" value="Inspeção tipo Q" <?php echo $revestimeto == "Inspeção tipo Q "; ?> > Inspeção Tipo Q    <br>
+   <input    type="checkbox" id="iopcao2" name="revestimento" value="Cadium Amarelo"> Cadium Amarelo     <br>   
+   <input    type="checkbox" id="iopcao3" name="revestimento" value="Cadium Verde-Oliva"> Cadium Verde-Oliva <br>   
+   <input    type="checkbox" id="iopcao3" name="revestimento" value="Xylan Cinza"> Xylan Cinza  <br>      
+   <input    type="checkbox" id="iopcao3" name="revestimento" value="Xylan Azul"> Xylan Azul         <br>  
+   <input    type="checkbox" id="iopcao3" name="revestimento" value="Sem Revestimento"> Sem Revestimento <br> <br>  
+   <input    type="text"     id="data"    name="data_entrada" maxlength="10" onkeyup="mascaraData(this)" placeholder="Dia/Mês/Ano"> Data de Entrada   <br>  
+   <input    type="text"     id="data"    name="data_entrega" maxlength="10" onkeyup="mascaraData(this)" placeholder="Dia/Mês/Ano"> Data de Entrega  <br>  
+        </div>
+    </div>      
+    </h3>
+    
+   
+   
+     <button type="submit" name="salvar">SALVAR </button>
+    
 
-   <h3><button type="update" name="update">SALVAR </button></h3> 
-</div>
-    <
+
+<script> function mascaraData(input) { var valor = input.value; if (valor.length == 2 || valor.length == 5) { input.value += '/'; } } </script>
 </form>
 </html>
