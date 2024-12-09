@@ -54,8 +54,7 @@
                 <th scope="col">OP </th>
                 <th scope="col">CLIENTE</th>
                 <th scope="col">PEDIDO</th>
-                <th scope="col">REVESTIMENTO</th>
-                <th scope="col">INSP_Q</th>
+                <th scope="col">REVESTIMENTO/TIPO</th>
                 <th scope="col">DATA_ENTRADA</th>
                 <th scope="col">DATA_ENTREGA</th>
                 <th scope="col">...</th>
@@ -71,7 +70,6 @@
                         echo "<td>".$dados["CLIENTE"]."</td>";
                         echo "<td>".$dados["PEDIDO"]."</td>";
                         echo "<td>".$dados["REVESTIMENTO"]."</td>";
-                        echo "<td>".$dados["INSP_Q"]."</td>";
                         echo "<td>".$dados["DATA_ENTRADA"]."</td>";
                         echo "<td>".$dados["DATA_ENTREGA"]."</td>";
                         

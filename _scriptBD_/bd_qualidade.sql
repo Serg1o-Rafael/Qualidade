@@ -8,7 +8,6 @@ CREATE TABLE MATERIAIS(
     CLIENTE INT not null,
     PEDIDO INT not null,
     REVESTIMENTO VARCHAR(20) null,
-    INSP_Q bit null,
     DATA_ENTRADA varchar(10) not null,
     DATA_ENTREGA varchar(10) not null);
    
@@ -44,7 +43,7 @@ CREATE TABLE MONITORAMENTO(
 
 
 
-    )
+    
    
   
     

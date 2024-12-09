@@ -17,7 +17,6 @@ if(!empty($_GET["id"])){
             $cliente = $dados["CLIENTE"];
             $pedido = $dados["PEDIDO"];
             $revestimento = $dados["REVESTIMENTO"];
-            $insp_q = $dados["INSP_Q"];
             $data_entrada = $dados["DATA_ENTRADA"];
             $data_entrega = $dados["DATA_ENTREGA"];
           

@@ -11,13 +11,12 @@ $op= $_POST["op"];
 $cliente = $_POST["cliente"];
 $pedido = $_POST["pedido"];
 $revestimento = $_POST["tratamento2"];
-$insp_q = $_POST["tratamento1"];
 $data_entrada = $_POST["data_entrada"];
 $data_entrega = $_POST["data_entrega"];
 
 
 
-$sqlUpdate="UPDATE materiais SET OP='$op', CLIENTE='$cliente', PEDIDO='$pedido', REVESTIMENTO='$revestimento', INSP_Q='$insp_q', DATA_ENTRADA='$data_entrada', DATA_ENTREGA='$data_entrega' WHERE ID ='$id'";
+$sqlUpdate="UPDATE materiais SET OP='$op', CLIENTE='$cliente', PEDIDO='$pedido', REVESTIMENTO='$revestimento', DATA_ENTRADA='$data_entrada', DATA_ENTREGA='$data_entrega' WHERE ID ='$id'";
 $result= mysqli_query($mysqli, $sqlUpdate);
 
 
