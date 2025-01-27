@@ -31,15 +31,7 @@ Relatório Dimensional <br>
 <input type="checkbox" name="rd" id="ird1" value="Finalizado" <?php echo $rd == "Finalizado" ? "checked" : ""?>> Finalizado <br>  
 <input type="checkbox" name="rd" id="ird2" value="Em andamento" <?php echo $rd == "Em andamento" ? "checked" : ""?>> Em andamento <br><br>
 
-Calibração <br>
-<input type="checkbox" name="cal" id="ical1" value="Finalizado"<?php echo $cal == "Finalizado" ? "checked" : ""?>> Finalizado <br>  
-<input type="checkbox" name="cal" id="ical2" value="Em andamento"<?php echo $cal == "Em andamento" ? "checked" : "" ?>> Em andamento <br><br>  
 
-
-Visual <br>
-<input type="checkbox" name="visual" id="ivisual1" value="Finalizado" <?php echo $visual == "Finalizado" ? "checked" : ""?>> Finalizado <br>  
-<input type="checkbox" name="visual" id="ivisual2" value="Em andamento" <?php echo $visual == "Em andamento" ? "checked" : ""?>> Em andamento<br><br>  
-  
 
 Quantidade Total: <br>
 <input type="number" name="quant" value="<?php echo $quant;?>"><br><br>  

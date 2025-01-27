@@ -15,7 +15,7 @@ if(!empty($_GET["id"])){
         $sqlDelete="DELETE FROM materiais where OP='$op'";
         $resultDelete = mysqli_query($mysqli, $sqlDelete);
 
-       // header('Location: /qualidade/inspF/materiais.php');
+        header('Location: /qualidade/inspF/materiais.php');
     }
     
     

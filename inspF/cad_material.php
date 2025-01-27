@@ -22,21 +22,21 @@
     <div class="tudo">    
         <div class="campos">
     <h4>Obrigatório:</h4> 
-    <input type="text"   name="op" maxlength="15" require>  OP <br>
-    <input type="text"   name="cliente" required>Cliente           <br>   
+    <input type="text"   name="op" maxlength="15" required>  OP <br>
+    <input type="text"   name="cliente" required>Cliente <br>   
     <input type="number" name="pedido" required>Pedido  <br> <br>  
         </div>
     
         <div class="campos2">
-        <h4>Característica</h4>
+        <h4>Revestimento/Tipo</h4>
    <input    type="checkbox" id="iopcao1" name="revestimento" value="Inspeção tipo Q"> Inspeção Tipo Q    <br>
    <input    type="checkbox" id="iopcao2" name="revestimento" value="Cadium Amarelo"> Cadium Amarelo     <br>   
    <input    type="checkbox" id="iopcao3" name="revestimento" value="Cadium Verde-Oliva"> Cadium Verde-Oliva <br>   
    <input    type="checkbox" id="iopcao3" name="revestimento" value="Xylan Cinza"> Xylan Cinza  <br>      
    <input    type="checkbox" id="iopcao3" name="revestimento" value="Xylan Azul"> Xylan Azul         <br>  
    <input    type="checkbox" id="iopcao3" name="revestimento" value="Sem Revestimento"> Sem Revestimento <br> <br>  
-   <input    type="text"     id="data"    name="data_entrada" maxlength="10" onkeyup="mascaraData(this)" placeholder="Dia/Mês/Ano"> Data de Entrada   <br>  
-   <input    type="text"     id="data"    name="data_entrega" maxlength="10" onkeyup="mascaraData(this)" placeholder="Dia/Mês/Ano"> Data de Entrega  <br>  
+   <input    type="text"     id="data"    name="data_entrada" maxlength="10" onkeyup="mascaraData(this)" placeholder="Dia/Mês/Ano" required> Data de Entrada   <br>  
+   <input    type="text"     id="data"    name="data_entrega" maxlength="10" onkeyup="mascaraData(this)" placeholder="Dia/Mês/Ano" required> Data de Entrega  <br>  
         </div>
     </div>      
     </h3>

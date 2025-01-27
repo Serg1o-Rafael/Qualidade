@@ -21,12 +21,15 @@
     <?php include("config/materiais_inspf/tabela.php")?>
         
       
-    <h1> Materiais (Inspeção Final)</h1>
+    <h1> OP's Cadastradas (Inspeção Final)</h1>
    
      
 
-    <a href="cad_material.php"><button type="btn" >Cadastrar Material</button></a>
+    <a href="cad_material.php"><button type="btn" >Cadastrar OP</button></a>
     <a href="monitoramento.php"><button type="btn">Monitoramento</button></a> 
+    <a href="ops_liberadas.php"><button type="btn" >OP's Liberadas</button></a>
+    <a href="retrabalho.php"><button type="btn" >Retrabalho</button></a>
+
     <style>
 
 .box-search{display: flex; justify-content: center; gap: 0.1%;}

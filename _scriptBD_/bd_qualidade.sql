@@ -30,14 +30,23 @@ CREATE TABLE MONITORAMENTO(
 
     CREATE TABLE RETRABALHO(
         ID int not null PRIMARY KEY AUTO_INCREMENT,
-        ID_MATERIAL int not null,
+        ID_OP int not null,
         OP VARCHAR (15) not null,
         QUANT_TOTAL INT not null,
         DATA varchar(10) not null,
         DATA_SAIDA VARCHAr(10) null,
         ESPECIFICAÇÃO TEXT not null,
 
-    FOREIGN KEY(ID_MATERIAL) REFERENCES MATERIAIS(ID));
+    FOREIGN KEY(ID_OP) REFERENCES MATERIAIS(ID));
+
+
+    CREATE TABLE OPS_LIBERADAS(
+        ID int not null PRIMARY KEY AUTO_INCREMENT,
+        OP VARCHAR (15) not null,
+        QUANT_TOTAL int not null,
+        SOBRA int not null,
+        DATA varchar (10) not null);
+ 
 
 
 

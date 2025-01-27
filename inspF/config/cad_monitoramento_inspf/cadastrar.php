@@ -9,8 +9,6 @@ if(isset($_POST["salvar"])){
     $op = $_POST["op"];
     $snqc = $_POST["snqc"];
     $rd = $_POST["rd"];
-    $cal = $_POST["cal"];
-    $visual = $_POST["visual"];
     $quant = $_POST["quant"];
     $sobra = $_POST["sobra"];
     $local = $_POST["local"];
@@ -22,8 +20,8 @@ if(isset($_POST["salvar"])){
    
     
 
-    $sql= mysqli_query($mysqli, "INSERT INTO monitoramento(ID_MATERIAL,OP,LOCAL,CALIBRACAO,VISUAL,QUANT_TOTAL,SOBRA,RELATORIO_DIM,SNQC)
-    VALUES('$id','$op','$local','$cal','$visual','$quant','$sobra','$rd','$snqc')");
+    $sql= mysqli_query($mysqli, "INSERT INTO monitoramento(ID_MATERIAL,OP,LOCAL,QUANT_TOTAL,SOBRA,RELATORIO_DIM,SNQC)
+    VALUES('$id','$op','$local','$quant','$sobra','$rd','$snqc')");
 
 
     header("location: /qualidade/inspF/monitoramento.php");

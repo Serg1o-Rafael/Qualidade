@@ -17,7 +17,7 @@ if(isset($_POST["salvar"])){
     $sql= mysqli_query($mysqli, "INSERT INTO materiais(OP,CLIENTE,PEDIDO,REVESTIMENTO,DATA_ENTRADA,DATA_ENTREGA)
     VALUES('$op','$cliente','$pedido','$revestimento','$data_entrada','$data_entrega')");
 
-    header("location: /qualidade/inspF/cad_monitoramento_atalho.php?id=$op");
+    header("location: /qualidade/inspF/cad_monitoramento.php?id=$op");
 }
 
 
