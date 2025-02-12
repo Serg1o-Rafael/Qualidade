@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/qualidade/inspF/css/body.css">
-    <link rel="stylesheet" type="text/css" href="/qualidade/inspF/css/btn_salvar.css">
-    <link rel="stylesheet" type="text/css" href="/qualidade/inspF/css/cad_material.css">
+    <link rel="stylesheet" type="text/css" href="/qualidade/css/inspf/body.css">
+    <link rel="stylesheet" type="text/css" href="/qualidade/css/inspf/btn_salvar.css">
+    <link rel="stylesheet" type="text/css" href="/qualidade/css/inspf/cad_material.css">
 
 
     <title>Document</title>

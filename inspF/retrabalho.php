@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/retrabalho.css">
+        <link rel="stylesheet" type="text/css" href="/qualidade/css/inspf/retrabalho.css">
 
    
 
@@ -12,6 +12,8 @@
 <body>
 
 <div class="titulo">Retrabalho (Inspeção Final)</div>
+
+<?php include("C:/xampp/htdocs/qualidade/inspF/config/retrabalho_inspf/cadastrar.php");    ?>
 
 
 <form action="" method="POST">
@@ -26,7 +28,7 @@
 
 <div class="text_area">
 <h1>Especificação:</h1>
-<textarea placeholder="Escreva o motivo pelo pedido de retrabalho..."></textarea><br>
+<textarea placeholder="Escreva o motivo pelo pedido de retrabalho..." name="espcf"></textarea><br>
 </div>
 </div>
         
@@ -41,13 +43,13 @@
 <div class="data_salvar">
     <div class="data">
 <h1>Data:</h1>
-<input    type="text"     id="data"    name="data_entrada" maxlength="10" onkeyup="mascaraData(this)" placeholder="Insira a data exata deste pedido de retrabalho."><br>  
+<input    type="text"     id="data"    name="data" maxlength="10" onkeyup="mascaraData(this)" placeholder="Insira a data exata do pedido de retrabalho."><br>  
  <br>  
 <button type="submit" name="salvar">SALVAR</button>
 </div>     
 </div>
-<h1>Saida:</h1>
-<input    type="text"     id="data"    name="data_entrada" maxlength="10" onkeyup="mascaraData(this)" placeholder="Insira a data da saida do material para o retrabalho.">   <br>  
+<h1>Retorno:</h1>
+<input    type="text"     id="data"    name="retorno" maxlength="10" onkeyup="mascaraData(this)" placeholder="Insira a data do retorno do material para o retrabalho.">   <br>  
   
 </div>
       

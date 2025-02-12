@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/body.css">
-    <link rel="stylesheet" type="text/css" href="css/btn_salvar.css">
-    <link rel="stylesheet" type="text/css" href="css/cad_monitoramento.css">
+    <link rel="stylesheet" type="text/css" href="/qualidade/css/inspf/body.css">
+    <link rel="stylesheet" type="text/css" href="/qualidade/css/inspf/btn_salvar.css">
+    <link rel="stylesheet" type="text/css" href="/qualidade/css/inspf/cad_monitoramento.css">
 
 
     <title>Inserir Processo</title>
@@ -19,25 +19,6 @@
 
 
 <form action="" method="POST">
-<div class="tudo">    
-    <div class="campos">
-        <div class="snqc">
-<h4>SNQC</h4>
-<input type="checkbox" name="snqc" id="isnqc1" value="OK"> OK<br>  
-<input type="checkbox" name="snqc" id="isnqc2" value="Não"> Não <br>  
-<input type="checkbox" name="snqc" id="isnqc3" value="Não consta"> Não consta <br>
-        </div>
-
-        <div class="rd">
-<h4>Relatório Dimensional</h4>
-<input type="checkbox" name="rd" id="ird1" value="OK"> OK <br>  
-<input type="checkbox" name="rd" id="ird2" value="Não"> Não <br>
-        </div>
-
-    
-
- 
-    </div>
 
     <div class="campos2">
         <div class="local">

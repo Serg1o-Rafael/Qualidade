@@ -13,10 +13,6 @@ if(!empty($_GET["id"])){
     if($result->num_rows >0) {
         while($dados = mysqli_fetch_assoc($result)){
             $op = $dados["OP"];
-            $snqc = $dados["SNQC"];
-            $rd = $dados["RELATORIO_DIM"];
-            $cal = $dados["CALIBRACAO"];
-            $visual = $dados["VISUAL"];
             $quant = $dados["QUANT_TOTAL"];
             $sobra = $dados["SOBRA"];
             $local = $dados["LOCAL"];

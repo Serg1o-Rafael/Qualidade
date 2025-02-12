@@ -17,13 +17,9 @@ CREATE TABLE MONITORAMENTO(
     ID_MATERIAL int not null,
     OP VARCHAR (15) not null,
     LOCAL VARCHAR(20) NOT NULL,
-    CALIBRACAO VARCHAR (20) not null,
-    VISUAL VARCHAR (20) not null,
     QUANT_TOTAL INT null,
     SOBRA INT NULL,
-    RELATORIO_DIM VARCHAR(20) NOT NULL,
-    SNQC VARCHAR (20) null,
-  
+
    
    FOREIGN KEY (ID_MATERIAL) REFERENCES MATERIAIS(ID));
    
@@ -34,8 +30,8 @@ CREATE TABLE MONITORAMENTO(
         OP VARCHAR (15) not null,
         QUANT_TOTAL INT not null,
         DATA varchar(10) not null,
-        DATA_SAIDA VARCHAr(10) null,
-        ESPECIFICAÇÃO TEXT not null,
+        DATA_RETORNO VARCHAr(10) null,
+        ESPECIFICACAO TEXT not null,
 
     FOREIGN KEY(ID_OP) REFERENCES MATERIAIS(ID));
 

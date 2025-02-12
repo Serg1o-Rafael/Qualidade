@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/body.css">
-    <link rel="stylesheet" type="text/css" href="css/btn_salvar.css">
-    <link rel="stylesheet" type="text/css" href="css/cad_monitoramento.css">
+    <link rel="stylesheet" type="text/css" href="/qualidade/css/inspf/body.css">
+    <link rel="stylesheet" type="text/css" href="/qualidade/css/inspf/btn_salvar.css">
+    <link rel="stylesheet" type="text/css" href="/qualidade/css/inspf/cad_monitoramento.css">
 
 
     <title>Inserir Processo</title>
@@ -25,28 +25,7 @@
 OP <br>
 <h3><input type="text" name="op" value="<?php echo $op;?>" maxlength="15" require><br></h3>
 
-<div class="tudo">    
-    <div class="campos">
-        <div class="snqc">
 
-       
-
-<h4>SNQC</h4>
-<input type="checkbox" name="snqc" id="isnqc1" value="OK"><?php echo $snqc == "OK" ? "checked" : ""?>OK</input> <br>
-<input type="checkbox" name="snqc" id="isnqc2" value="Não"><?php echo $snqc == "Não" ? "checked" : ""?>Não</input> <br>
-<input type="checkbox" name="snqc" id="isnqc3" value="Não consta"><?php echo $snqc == "Não consta" ? "checked" : ""?>Não consta</input><br><br>
-        </div>
-
-        <div class="rd">
-<h4>Relatório Dimensional</h4>
-<input type="checkbox" name="rd" id="ird1" value="OK"><?php echo $rd == "OK" ? "checked" : ""?> OK <br>
-<input type="checkbox" name="rd" id="ird2" value="Não"><?php echo $rd == "Não" ? "checked" : ""?> Não <br> <br>
-        </div>
-
-    
-
- 
-    </div>
 
     <div class="campos2">
         <div class="local">

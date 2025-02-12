@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/body.css">
+    <link rel="stylesheet" type="text/css" href="/qualidade/css/inspf/body.css">
 
     <title>Inserir Processo</title>
 </head>
@@ -20,17 +20,6 @@
  
 OP <br>
 <h3><input type="text" name="op" value="<?php echo $op;?>" maxlength="15" require><br></h3>
-
-
-SNQC <br>
-<input type="checkbox" name="snqc" id="isnqc1" value="Finalizado" <?php echo $snqc == "Finalizado" ? "checked" : ""?> > Finalizado <br>  
-<input type="checkbox" name="snqc" id="isnqc2" value="Em andamento"<?php echo $snqc == "Em andamento" ? "checked" : ""?>> Em andamento <br>
-<input type="checkbox" name="snqc" id="isnqc3" value="Não existe"<?php echo $snqc == "Não existe" ? "checked" : ""?>> Não existe <br> <br>
-
-Relatório Dimensional <br>
-<input type="checkbox" name="rd" id="ird1" value="Finalizado" <?php echo $rd == "Finalizado" ? "checked" : ""?>> Finalizado <br>  
-<input type="checkbox" name="rd" id="ird2" value="Em andamento" <?php echo $rd == "Em andamento" ? "checked" : ""?>> Em andamento <br><br>
-
 
 
 Quantidade Total: <br>

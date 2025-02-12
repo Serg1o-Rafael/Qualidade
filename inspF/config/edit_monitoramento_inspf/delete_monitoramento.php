@@ -5,14 +5,14 @@
 if(!empty($_GET["id"])){
 
     include("C:/xampp/htdocs/qualidade/conexao.php");
-    $op= $_GET["id"];
+    $id= $_GET["id"];
    
-     $sql = "SELECT * FROM monitoramento where OP = '$op'";
+     $sql = "SELECT * FROM monitoramento where ID_MATERIAL = '$id'";
      $result = mysqli_query($mysqli, $sql);
   
     if($result->num_rows >0) {
         
-        $sqlDelete="DELETE FROM monitoramento where OP='$op'";
+        $sqlDelete="DELETE FROM monitoramento where ID_MATERIAL='$id'";
         $resultDelete = mysqli_query($mysqli, $sqlDelete);
 
         header('Location: /qualidade/inspF/monitoramento.php');
