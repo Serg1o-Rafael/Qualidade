@@ -13,7 +13,7 @@
 <body>
 <h1>Retrabalho</h1>
     
-
+<br><br>
 
 
     <style>
@@ -29,10 +29,6 @@
 
     <?php include("config/tabela_retrabalho_inspf/tabela.php")?>
    
-    <a href="cad_material.php"><button type="btn" >Cadastrar OP</button></a>
-    <a href="materiais.php"><button type="btn">OP's Cadastradas</button></a> 
-    <a href="ops_liberadas.php"><button type="btn" >OP's Liberadas</button></a>
-    <a href="monitoramento.php"><button type="btn">Monitoramento</button></a> 
 
 
     <div class="logo">
@@ -48,7 +44,15 @@
         </button>
         </div> <br>
 
+        <nav class="navbar bg-dark">
+  <form class="container-fluid justify-content-start">
+  <a href="cad_material.php"> <button class="btn btn-dark btn-outline" type="button">Cadastrar OP </button> </a>
+  <a href="materiais.php"><button class="btn btn-dark btn-outline" type="button">OP's Cadastradas</button></a>
+  <a href="ops_liberadas.php"><button class="btn btn-dark btn-outline" type="button">OP's Liberadas</button></a>
+  <a href="monitoramento.php"><button class="btn btn-dark btn-outline" type="button">Monitoramento</button></a>
 
+  </form>
+</nav>
 
     <div class="m-3">
     <table class="table text-white table-bg">

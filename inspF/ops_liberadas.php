@@ -12,14 +12,26 @@
 <body>
 <h1>OP's Liberadas</h1>
     
+<br><br>
 
-<a href="cad_material.php"><button type="btn" >Cadastrar OP</button></a>
-<a href="monitoramento.php"><button type="btn">Monitoramento</button></a> 
-    <a href="materiais.php"><button type="btn">OP's Cadastradas</button></a> 
-    <a href="retrabalho.php"><button type="btn" >Retrabalho</button></a>
 
 <?php include("config/ops_liberadas/tabela.php"); ?>
 
+
+
+<style>
+        .box-search{
+        display: flex;
+        justify-content: center;
+        gap: 0.1%;
+    }
+    </style>
+
+
+
+<div class="logo">
+    <img src="img/logo_forjafix.png"> <br>
+    </div>
 
 <div class="box-search">
         <input type="search" class="form-control w-25" placeholder="Pesquisar" id="pesquisar" >
@@ -27,16 +39,17 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
 </svg>
-</div>
+</div><br>
 
-
-    <style>
-        .box-search{
-        display: flex;
-        justify-content: center;
-        gap: 0.1%;
-    }
-    </style>
+<nav class="navbar bg-dark">
+  <form class="container-fluid justify-content-start">
+  <a href="cad_material.php"> <button class="btn btn-dark btn-outline" type="button">Cadastrar OP</button></a>
+  <a href="materiais.php"><button class="btn btn-dark btn-outline" type="button">OP's Cadastradas</button></a>
+  <a href="retrabalho.php"><button class="btn btn-dark btn-outline" type="button">Retrabalho</button></a>
+  <a href="monitoramento.php"><button class="btn btn-dark btn-outline" type="button">Monitoramento</button></a>
+  
+  </form>
+</nav>
     <div class="m-3">
     <table class="table text-white table-bg">
             <thead>

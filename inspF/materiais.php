@@ -24,11 +24,7 @@
     <h1> OP's Cadastradas (Inspeção Final)</h1>
    
      
-
-    <a href="cad_material.php"><button type="btn" >Cadastrar OP</button></a>
-    <a href="monitoramento.php"><button type="btn">Monitoramento</button></a> 
-    <a href="ops_liberadas.php"><button type="btn" >OP's Liberadas</button></a>
-    <a href="retrabalho.php"><button type="btn" >Retrabalho</button></a>
+<br><br>
 
     <style>
 
@@ -49,6 +45,15 @@
         </button>
         </div> <br>
 
+        <nav class="navbar bg-dark">
+  <form class="container-fluid justify-content-start">
+  <a href="cad_material.php"> <button class="btn btn-dark btn-outline" type="button">Cadastrar OP </button> </a>
+  <a href="monitoramento.php"><button class="btn btn-dark btn-outline" type="button">Monitoramento</button></a>
+  <a href="ops_liberadas.php"><button class="btn btn-dark btn-outline" type="button">OP's Liberadas</button></a>
+  <a href="tabela_retrabalho.php"><button class="btn btn-dark btn-outline" type="button">Retrabalho</button></a>
+
+  </form>
+</nav>
 
     <div class="m-3">
     <table class="table text-white table-bg">

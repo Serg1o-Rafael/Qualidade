@@ -1,0 +1,77 @@
+.campos{
+    display: flex;
+    font-size: larger;
+    height: 150px;
+    margin-left: 390px; ;
+    margin-top: 50px;
+}
+.fonte{
+    margin-left:700px;
+    margin-right: auto;
+ 
+    width: 120px;
+    height: 30px;
+
+}
+select{
+    margin-top: 20px;
+    width: 200px;
+    height: 70px;
+    border-radius: 15px;
+    font-size: larger;
+    background-color: azure;
+}
+
+.snqc{
+    background-color:rgb(65, 65, 131); 
+    width: 180px;
+    border-radius: 15px;
+    margin-right:10px;
+   
+}
+.rd{
+    background-color:rgb(219, 145, 76);
+    width: 240px;
+    border-radius: 15px;
+    margin-right:10px;
+   
+}
+.cal{
+    background-color:rgb(65, 65, 131); 
+    width: 170px;
+    border-radius: 15px;
+    margin-right:10px;
+}
+.visual{
+    background-color:rgb(219, 145, 76);
+    border-radius: 15px;
+    width: 180px;
+}
+
+.campos2{
+    font-size: larger;
+    display: flex;
+}
+.local{
+    
+    background-color:rgba(0,0,0,0.5);
+    font-size: larger;
+    width: 500px;
+    margin-left: 389px;
+    border-radius: 15px;
+  
+}
+.quant{
+
+    background-color: rgb(107, 163, 185);
+    width: 300px;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+.tudo{
+    display: block;
+    margin-top: 150px;
+    margin-left: 45px;
+    margin-right: auto;
+}

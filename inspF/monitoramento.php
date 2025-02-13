@@ -25,21 +25,12 @@
     }
     </style>
 
-    <style>
 
-        .button{
-            border-radius:50px;
-        }
-
-    </style>
 
 
     <?php include("config/monitoramento_inspf/tabela.php")?>
 <br><br>
-    <a href="cad_material.php"> <button type="button" class="btn btn-dark">Cadastrar OP</button></a>
-    <a href="materiais.php"> <button type="button" class="btn btn-dark">OP's Cadastradas</button></a> 
-    <a href="ops_liberadas.php"> <button type="button" class="btn btn-dark">OP's Liberadas</button></a>
-    <a href="tabela_retrabalho.php"> <button type="button" class="btn btn-dark">Retrabalho</button></a>
+
    
 
 
@@ -58,7 +49,15 @@
         </button>
         </div> <br>
 
+<nav class="navbar bg-dark">
+  <form class="container-fluid justify-content-start">
+  <a href="cad_material.php"> <button class="btn btn-dark btn-outline" type="button">Cadastrar OP </button> </a>
+  <a href="materiais.php"><button class="btn btn-dark btn-outline" type="button">OP's Cadastradas</button></a>
+  <a href="ops_liberadas.php"><button class="btn btn-dark btn-outline" type="button">OP's Liberadas</button></a>
+  <a href="tabela_retrabalho.php"><button class="btn btn-dark btn-outline" type="button">Retrabalho</button></a>
 
+  </form>
+</nav>
 
     <div class="m-3">
     <table class="table text-white table-bg">
