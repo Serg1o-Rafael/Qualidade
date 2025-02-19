@@ -46,10 +46,10 @@
 
         <nav class="navbar bg-dark">
   <form class="container-fluid justify-content-start">
-  <a href="cad_material.php"> <button class="btn btn-dark btn-outline" type="button">Cadastrar OP </button> </a>
-  <a href="materiais.php"><button class="btn btn-dark btn-outline" type="button">OP's Cadastradas</button></a>
-  <a href="ops_liberadas.php"><button class="btn btn-dark btn-outline" type="button">OP's Liberadas</button></a>
-  <a href="monitoramento.php"><button class="btn btn-dark btn-outline" type="button">Monitoramento</button></a>
+  <a href="cad_op.php"> <button class="btn btn-dark btn-outline" type="button">Cadastrar OP </button> </a>
+  <a href="tabela_ops.php"><button class="btn btn-dark btn-outline" type="button">OP's Cadastradas</button></a>
+  <a href="tabela_ops_liberadas.php"><button class="btn btn-dark btn-outline" type="button">OP's Liberadas</button></a>
+  <a href="tabela_monitoramento.php"><button class="btn btn-dark btn-outline" type="button">Monitoramento</button></a>
 
   </form>
 </nav>

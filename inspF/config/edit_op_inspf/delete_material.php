@@ -5,17 +5,17 @@
 if(!empty($_GET["id"])){
 
     include("C:/xampp/htdocs/qualidade/conexao.php");
-    $op= $_GET["id"];
+    $id= $_GET["id"];
    
-     $sql = "SELECT * FROM materiais where OP = '$op'";
+     $sql = "SELECT * FROM ops where ID = '$id'";
      $result = mysqli_query($mysqli, $sql);
   
     if($result->num_rows >0) {
         
-        $sqlDelete="DELETE FROM materiais where OP='$op'";
+        $sqlDelete="DELETE FROM ops where ID='$id'";
         $resultDelete = mysqli_query($mysqli, $sqlDelete);
 
-        header('Location: /qualidade/inspF/materiais.php');
+        header('Location: /qualidade/inspF/tabela_ops.php');
     }
     
     

@@ -15,7 +15,7 @@
 <br><br>
 
 
-<?php include("config/ops_liberadas/tabela.php"); ?>
+<?php include("config/tabela_ops_liberadas/tabela.php"); ?>
 
 
 
@@ -43,10 +43,10 @@
 
 <nav class="navbar bg-dark">
   <form class="container-fluid justify-content-start">
-  <a href="cad_material.php"> <button class="btn btn-dark btn-outline" type="button">Cadastrar OP</button></a>
-  <a href="materiais.php"><button class="btn btn-dark btn-outline" type="button">OP's Cadastradas</button></a>
-  <a href="retrabalho.php"><button class="btn btn-dark btn-outline" type="button">Retrabalho</button></a>
-  <a href="monitoramento.php"><button class="btn btn-dark btn-outline" type="button">Monitoramento</button></a>
+  <a href="cad_op.php"> <button class="btn btn-dark btn-outline" type="button">Cadastrar OP</button></a>
+  <a href="tabela_ops.php"><button class="btn btn-dark btn-outline" type="button">OP's Cadastradas</button></a>
+  <a href="tabela_retrabalho.php"><button class="btn btn-dark btn-outline" type="button">Retrabalho</button></a>
+  <a href="tabela_monitoramento.php"><button class="btn btn-dark btn-outline" type="button">Monitoramento</button></a>
   
   </form>
 </nav>

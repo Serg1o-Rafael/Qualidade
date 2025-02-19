@@ -7,7 +7,7 @@ if(!empty($_GET["id"])){
     include("C:/xampp/htdocs/qualidade/conexao.php");
     $id= $_GET["id"];
    
-     $sql = "SELECT * FROM materiais where ID = '$id'";
+     $sql = "SELECT * FROM ops where ID = '$id'";
      $result = mysqli_query($mysqli, $sql);
   
     if($result->num_rows >0) {

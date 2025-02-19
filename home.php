@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<a href="inspF/monitoramento.php"><button type="btn" >Inspeção Final</button></a>
+<a href="inspF/tabela_monitoramento.php"><button type="btn" >Inspeção Final</button></a>
 <a href="cad_material.php"><button type="btn" >Inspeção Intermediária</button></a>
 <a href="cad_material.php"><button type="btn" >Estoque</button></a>
 

@@ -1,7 +1,7 @@
 .campos{
     background-color: rgb(219, 145, 76);
-    width: 400px;
-    margin-left: 630px;
+    width: 70%;
+    margin-left: 130%;
     border-radius: 15px;
     
     
@@ -10,18 +10,18 @@
 .campos2{
     
   background-color:rgb(65, 65, 131);;
-  margin-left: 630px;
-  width: 400px;
-  height: 300px;
+  margin-left: 120%;
+  width: 90%;
+  height: 90%;
   border-radius: 15px;
 }
 input{
-    height: 15px;
-    margin-left: 10px; 
+    height: 10%;
+    margin-left: 10%; 
 }
 .tudo{
     
-    margin-top: 76px;
+    margin-top: 20%;
     font-size: larger;
     text-align: left;
 }

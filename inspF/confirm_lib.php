@@ -48,7 +48,7 @@ $sqlDelete="DELETE FROM monitoramento where OP='$op'";
 $resultDelete = mysqli_query($mysqli, $sqlDelete);
   
 
-header("location: /qualidade/inspf/ops_liberadas.php");
+header("location: /qualidade/inspf/tabela_ops_liberadas.php");
 }
 
 ?>

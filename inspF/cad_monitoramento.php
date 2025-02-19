@@ -13,7 +13,7 @@
 <body>
   
 
-<h1> Cadastrando o Monitoramento: </h1>
+<h1> Cadastrando ao Monitoramento: </h1>
 
 <?php include("config/cad_monitoramento_inspf/cadastrar.php");?>
 
@@ -29,7 +29,8 @@
         </div>
 
 
-        <div class="quant">
+<div class="quant">
+
 <h4>Quantidade Total</h4>
 <input type="number" name="quant"> 
 <h4>Sobra</h4>
@@ -37,7 +38,8 @@
         </div>
     </div>
 
-<input type="hidden" name="op" value="<?php $op=$_GET["id"]; echo $op; ?>"> 
+<input type="hidden" name="id" value="<?php $id=$_GET["id"]; echo $id; ?>"> 
+
     
 </div>
 <button type="submit" name="salvar">SALVAR</button>

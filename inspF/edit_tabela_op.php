@@ -12,12 +12,12 @@
 </head>
 <body>
    
-<?php include("config/edit_material_inspf/dados_material.php");?>
+<?php include("config/edit_op_inspf/dados_material.php");?>
 
-<form action="config/edit_material_inspf/salvar_material.php" method="POST">
+<form action="config/edit_op_inspf/salvar_material.php" method="POST">
 
 
-    <h1>Cadastrando Material:</h1><br>
+    <h1>Cadastrando OP:</h1><br>
   
 
 

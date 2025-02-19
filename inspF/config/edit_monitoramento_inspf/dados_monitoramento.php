@@ -7,7 +7,7 @@ if(!empty($_GET["id"])){
     include("C:/xampp/htdocs/qualidade/conexao.php");
     $id= $_GET["id"];
    
-     $sql = "SELECT * FROM monitoramento where ID_MATERIAL = '$id'";
+     $sql = "SELECT * FROM monitoramento where ID_OP = '$id'";
      $result = mysqli_query($mysqli, $sql);
   
     if($result->num_rows >0) {

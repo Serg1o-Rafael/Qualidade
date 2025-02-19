@@ -6,23 +6,23 @@ if(isset($_POST["salvar"])){
 
     include("C:/xampp/htdocs/qualidade/conexao.php");
 
-    $op = $_POST["op"];
+    $id = $_POST["id"];
     $quant = $_POST["quant"];
     $sobra = $_POST["sobra"];
     $local = $_POST["local"];
     
-   $sqlId= mysqli_query($mysqli, "SELECT * FROM materiais where OP = '$op'");
+   $sqlId= mysqli_query($mysqli, "SELECT * FROM ops where ID = '$id'");
    $result=mysqli_fetch_assoc($sqlId);
-    $id=$result['ID'];
-
+    $lt=$result['LOTE'];
+    $op=$result['OP'];
    
     
 
-    $sql= mysqli_query($mysqli, "INSERT INTO monitoramento(ID_MATERIAL,OP,LOCAL,QUANT_TOTAL,SOBRA)
-    VALUES('$id','$op','$local','$quant','$sobra')");
+    $sql= mysqli_query($mysqli, "INSERT INTO monitoramento(ID_OP,OP,LOTE,LOCAL,QUANT_TOTAL,SOBRA)
+    VALUES('$id','$op','$lt','$local','$quant','$sobra')");
 
 
-    header("location: /qualidade/inspF/monitoramento.php");
+    header("location: /qualidade/inspF/tabela_monitoramento.php");
 
     
 

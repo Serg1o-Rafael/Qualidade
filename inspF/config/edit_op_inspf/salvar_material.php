@@ -16,10 +16,10 @@ $data_entrega = $_POST["data_entrega"];
 
 
 
-$sqlUpdate="UPDATE materiais SET OP='$op', CLIENTE='$cliente', PEDIDO='$pedido', REVESTIMENTO='$revestimento', DATA_ENTRADA='$data_entrada', DATA_ENTREGA='$data_entrega' WHERE ID ='$id'";
+$sqlUpdate="UPDATE ops SET OP='$op', CLIENTE='$cliente', PEDIDO='$pedido', REVESTIMENTO='$revestimento', DATA_ENTRADA='$data_entrada', DATA_ENTREGA='$data_entrega' WHERE ID ='$id'";
 $result= mysqli_query($mysqli, $sqlUpdate);
 
 
-header("Location: /qualidade/inspF/materiais.php");
+header("Location: /qualidade/inspF/tabela_ops.php");
 }
  ?>

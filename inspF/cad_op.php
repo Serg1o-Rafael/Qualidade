@@ -12,9 +12,9 @@
 </head>
 <body>
    
-    <h1>Cadastrando Material:</h1><br>
+    <h1>Cadastrando OP:</h1><br>
   
-    <?php include("config/cad_material_inspf/cadastrar.php");?>
+    <?php include("config/cad_op_inspf/cadastrar.php");?>
     <form action="" method="POST">
 
 
@@ -36,7 +36,10 @@
    <input    type="checkbox" id="iopcao3" name="revestimento" value="Xylan Azul"> Xylan Azul         <br>  
    <input    type="checkbox" id="iopcao3" name="revestimento" value="Sem Revestimento"> Sem Revestimento <br>
    <input    type="checkbox" id="iopcao3" name="revestimento" value="Zinco Eletrolítico"> Zinco Eletrolítico <br>   
+   <input    type="checkbox" id="iopcao3" name="revestimento" value="Inox"> Inox <br>   
 
+   <input    type="text"     id="lt"    name="lt" maxlength="1"placeholder="Lote de referência..." required> Lote   <br>  
+   <input    type="text"     id="material"    name="material" maxlength="5"placeholder="Material:L43,B7..." required> Material   <br>  
    <input    type="text"     id="data"    name="data_entrada" maxlength="10" onkeyup="mascaraData(this)" placeholder="Dia/Mês/Ano" required> Data de Entrada   <br>  
    <input    type="text"     id="data"    name="data_entrega" maxlength="10" onkeyup="mascaraData(this)" placeholder="Dia/Mês/Ano" required> Data de Entrega  <br>  
         </div>

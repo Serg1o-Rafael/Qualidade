@@ -11,7 +11,7 @@ $data = $_POST["data"];
 $retorno = $_POST["retorno"];
 
 
-$sqlId= mysqli_query($mysqli, "SELECT * FROM materiais where OP = '$op'");
+$sqlId= mysqli_query($mysqli, "SELECT * FROM ops where OP = '$op'");
    $result=mysqli_fetch_assoc($sqlId);
     $id=$result['ID'];
 
