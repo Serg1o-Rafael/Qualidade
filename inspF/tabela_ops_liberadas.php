@@ -93,7 +93,7 @@
     });
     function searchData()
     {
-        window.location = 'ops_liberadas.php?search='+search.value;
+        window.location = 'tabela_ops_liberadas.php?search='+search.value;
     }
 </script>
 </html>

@@ -5,7 +5,7 @@ use QUALIDADE;
 CREATE TABLE OPS(
     ID int not null PRIMARY KEY AUTO_INCREMENT,
     OP VARCHAR (15) not null,
-    LOTE int null,
+    LOTE varchar (10) null,
     CLIENTE INT not null,
     PEDIDO INT not null,
     REVESTIMENTO VARCHAR(20) null,
@@ -18,7 +18,7 @@ CREATE TABLE OPS(
 CREATE TABLE MONITORAMENTO(
     ID_OP int not null,
     OP VARCHAR (15) not null,
-    LOTE int null,
+    LOTE varchar (10) null,
     LOCAL VARCHAR(20) NOT NULL,
     QUANT_TOTAL INT null,
     SOBRA INT NULL,

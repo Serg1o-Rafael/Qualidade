@@ -65,7 +65,7 @@
                 <th scope="col">PEDIDO</th>
                 <th scope="col">REVESTIMENTO/TIPO</th>
                 <th scope="col">MATERIAL</th>
-                <th scope="col">DATA_ENTRADA</th>
+                <th scope="col">ENTRADA_SETOR</th>
                 <th scope="col">DATA_ENTREGA</th>
                 <th scope="col">...</th>
 
@@ -120,7 +120,7 @@
     });
     function searchData()
     {
-        window.location = 'materiais.php?search='+search.value;
+        window.location = 'tabela_ops.php?search='+search.value;
     }
 </script>
 </html>

@@ -30,9 +30,9 @@ OP <br>
     <div class="campos2">
         <div class="local">
 <h4>Local</h4>
-<input type="checkbox" name="local" id="iaguardando_insp" value="Recepção"><?php echo $local == "Recepção" ? "checked" : ""?> Recepção <br>
-<input type="checkbox" name="local" id="i_insp" value="Inspeção"><?php echo $local == "Inspeção" ? "checked" : ""?>Inspeção<br>
-<input type="checkbox" name="local" id="i_insp_cliente" value="Cliente"><?php echo $local == "Cliente" ? "checked" : ""?>Cliente<br><br>
+<input type="checkbox" name="local" id="iaguardando_insp" value="Recepção"<?php echo $local == "Recepção" ? "checked" : ""?> > Recepção <br>
+<input type="checkbox" name="local" id="i_insp" value="Inspeção"<?php echo $local == "Inspeção" ? "checked" : ""?> >Inspeção<br>
+<input type="checkbox" name="local" id="i_insp_cliente" value="Cliente"<?php echo $local == "Cliente" ? "checked" : ""?> >Cliente<br><br>
         </div>
 
 
